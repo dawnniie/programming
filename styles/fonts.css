@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Asap';
+  src: url('/fonts/Asap/static/Asap-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Asap';
+  src: url('/fonts/Asap/static/Asap-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('/fonts/Maven_Pro/static/MavenPro-Bold.ttf');
+  font-weight: bold;
+}
