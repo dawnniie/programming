@@ -532,7 +532,7 @@ const AddressRow = memo(({ value, index: i, setSelf, archi, instructionSet, loca
   const location = value & (bigPow(2n, (archi - instructionSet)) - 1n)
 
   return <tr className='byte'>
-    <td>{i + 1}</td>
+    <td>{i}</td>
     <td><Input
       value={binaryEditing === i ? binaryEditingValue : value.toString(2).padStart(Number(archi), '0')}
       maxLength={Number(archi)}
