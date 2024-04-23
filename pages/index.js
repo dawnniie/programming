@@ -9,7 +9,7 @@ export default function Home () {
     <p>There are always new tools under development, so make sure to check back occasionally.</p>
 
     <div className='pages'>
-      {pages.map(page => <a href={page.href} className='page'>
+      {pages.map(page => <a key={page.href} href={page.href} className='page'>
         <h3>{page.name}</h3>
         <p>{page.description}</p>
       </a>)}

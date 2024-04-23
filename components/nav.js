@@ -6,7 +6,7 @@ export default function Nav ({ isHome = false, current }) {
   return <div className='nav' style={isHome ? { justifyContent: 'center' } : {}}>
     <Link href='/'><h1>lachlan{'programming'.split('').map((c, i) => <span key={i} style={{ color: `hsl(160, 100%, ${44 + i * 4}%)` }}>{c}</span>)}</h1></Link>
 
-    {!isHome ? pages.map((page, i) => <Link key={i} href={page.href}><a style={{ opacity: current === page.name ? 1 : null }}>{page.name}</a></Link>) : ''}
+    {!isHome ? pages.map((page, i) => <Link legacyBehavior key={i} href={page.href}><a style={{ opacity: current === page.name ? 1 : null }}>{page.name}</a></Link>) : ''}
 
     <style jsx>{`
       .nav {

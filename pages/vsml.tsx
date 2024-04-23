@@ -49,9 +49,9 @@ const samples = [
 
 const instructionSets = [4n, 5n].map(v => ({ label: v + '-bit', value: v }))
 
-const bigPow: (a: bigint, b: bigint) => bigint = eval('(a, b) => a ** b')
+const bigPow = (a: bigint, b: bigint) => a ** b
 
-export default function VSML () {
+export default function Vsml () {
   const [programCounter, setProgramCounter] = useState(0n)
   const [accumulator, setAccumulator] = useState(0n)
   const [archi, setArchi] = useState(16n)
