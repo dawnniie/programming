@@ -34,4 +34,4 @@ USER nextjs
 EXPOSE 3001
 ENV PORT 3001
 
-CMD HOSTNAME=localhost node server.js
+CMD HOSTNAME=172.19.0.1 node server.js
